@@ -1,0 +1,128 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #e0eafc, #cfdef3);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.result {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  margin-top: 15px;
+}
+
+.chart-container {
+  margin-top: 30px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+canvas {
+  width: 100% !important;
+  height: 300px !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f8f9fa;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+
+
+
+#forecastContainer {
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  animation: fadeIn 0.6s ease-in;
+}
+
+#forecastTable {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  font-size: 1rem;
+}
+
+#forecastTable th, #forecastTable td {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+}
+
+#forecastTable th {
+  background: deepskyblue;
+  color: white;
+}
+
+#forecastTable td {
+  background: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+#forecastTable tr:hover td {
+  background: #f0faff;
+  transition: background 0.3s ease;
+}
+
